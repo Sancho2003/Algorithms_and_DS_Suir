@@ -53,7 +53,6 @@ int main() {
 		n--;
 		int index = find_max(tree_data, prev + 1, n_max);
 		printf("%d ", index);
-// 		printf("%s", " ");
 		tree_data[n_max + index - 1] = 0;
 
 		int j = n_max + index - 1;
