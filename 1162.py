@@ -19,7 +19,7 @@ for i in range(n-1):
         currency[edges[j][1]] = max((currency[edges[j][0]] - edges[j][3]) * edges[j][2], currency[edges[j][1]]);
 
 for i in range(len(edges)):
-    if (currency[edges[i][0]] - edges[i][3]) * edges[i][2] > currency[edges[i][1]] + 0.000001:
+    if (currency[edges[i][0]] - edges[i][3]) * edges[i][2] > currency[edges[i][1]]:
         print('YES')
         no_status = False
         break
